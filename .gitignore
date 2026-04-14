@@ -1,0 +1,30 @@
+# Java build outputs
+target/
+out/
+build/
+*.class
+*.log
+*.war
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+
+# Kotlin
+.kotlin
