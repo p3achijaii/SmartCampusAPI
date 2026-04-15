@@ -51,4 +51,14 @@ public class Room {
     public void setSensorIds(List<String> sensorIds) {
         this.sensorIds = sensorIds;
     }
+
+    public void addSensorId(String sensorId) {
+        if (!this.sensorIds.contains(sensorId)) {
+            this.sensorIds.add(sensorId);
+        }
+    }
+
+    public void removeSensorId(String sensorId) {
+        this.sensorIds.remove(sensorId);
+    }
 }
