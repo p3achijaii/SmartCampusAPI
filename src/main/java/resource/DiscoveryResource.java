@@ -5,12 +5,19 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/test")
+@Path("/v1")
 public class DiscoveryResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public String test() {
-        return "{\"message\": \"API is working\"}";
+    public String discovery() {
+        return "{ " +
+                "\"version\": \"v1\", " +
+                "\"message\": \"Smart Campus API\", " +
+                "\"resources\": { " +
+                "\"rooms\": \"/api/v1/rooms\", " +
+                "\"sensors\": \"/api/v1/sensors\" " +
+                "} " +
+                "}";
     }
 }
