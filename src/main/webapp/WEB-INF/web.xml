@@ -7,7 +7,7 @@
 
         <init-param>
             <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>resource</param-value>
+            <param-value>resource,exception,filter</param-value>
         </init-param>
 
         <load-on-startup>1</load-on-startup>
