@@ -4,7 +4,6 @@ import model.Room;
 import model.Sensor;
 import model.SensorReading;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
