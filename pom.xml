@@ -46,4 +46,8 @@
 
     </dependencies>
 
+    <build>
+        <finalName>SmartCampusAPI</finalName>
+    </build>
+
 </project>
