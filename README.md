@@ -41,8 +41,8 @@ All endpoints are exposed under:
 ## Prerequisites
 - Java 11
 - Maven
-- A servlet container or application server compatible with the project configuration
-- IntelliJ IDEA or NetBeans
+- Apache Tomcat (configured in NetBeans)
+- IntelliJ IDEA or NetBeans IDE (Java EE 7 support)
 
 ---
 
@@ -88,25 +88,31 @@ Use a browser, Postman, or the sample `curl` commands below.
 1. Launch **NetBeans**.
 2. Select **File > Open Project**.
 3. Choose the `SmartCampusAPI` project folder.
-4. Allow NetBeans to recognize it as a Maven project.
+4. Open as a Maven Web Application project (if needed)
 
-## Step 2: Verify Java version
+## Step 2: Verify project settings
 1. Right-click the project and choose **Properties**.
 2. Check that the project is using **Java 11**.
-3. Confirm Maven dependencies are resolved.
 
 ## Step 3: Build the project
 1. Right-click the project.
 2. Select **Clean and Build**.
-3. Wait until NetBeans finishes building the WAR file.
+
+Netbeans will:
+- Compile the project
+- Resolve dependencies
+- Generate WAR file
 
 ## Step 4: Run or deploy the application
-1. Deploy the generated WAR file from:
-   ```text
-   target/SmartCampusAPI.war
-   ```
-2. Start your application server from NetBeans or deploy manually.
-3. Verify the API is running.
+1. Right-click project
+2. Click Run
+
+NetBeans will:
+- Automatically deploy to Tomcat
+- Start the server if not running
+- Handle WAR deployement automatically
+
+*(No manual WAR deployment or Tomcat setup required)*
 
 ## Step 5: Test the API
 Use the sample `curl` commands below to confirm the endpoints work correctly.
